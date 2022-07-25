@@ -1,0 +1,97 @@
+def function(a,b,c):
+    max_num=max(a,b,c)
+    return max_num
+max_value=function(7,8,9)
+print("the max between three numbers is : ",max_value)
+def sum_of_list(list,ans):
+    if(ans==1):
+        sum_of_listing=sum(list)
+        return sum_of_listing
+    elif(ans==2):
+        mul=1
+        for i in range(0,len(list)):
+            mul=mul*list[i]
+        return mul
+list=[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,9]
+sums=sum_of_list(list,1)
+print("sum of list is : ",sums)
+mul=sum_of_list(list,2)
+print("multiplication of list is : ",mul)
+#(8, 2, 3, -1, 7)
+newlist=[8,2,3,-1,7]
+mul=sum_of_list(newlist,2)
+print(mul)
+def string_reversal(str):
+    rev=str[-1:-16:-1]
+    return rev
+#string="this is an string"
+#string="vaibhav"
+string="this is an strings"
+news=string_reversal(string)
+print("reversed string is : ",news)
+#def counts(str):
+'''
+
+  :param str: 
+  :return: 
+  ''''''  for i in range(0,len(str)):
+        lower=0
+        upper=0
+        if(str[i]==str[i].upper()):
+            upper=upper+1
+            print(upper)
+            print("upper character in string is : ",str[i])
+        else:
+            lower=lower+1
+            print("lower character is : ",str[i])
+    print("there are {} and {} characters in the string".format(lower,upper))
+string="this iS an String How Are U"
+x=counts(string)
+print(x)
+'''
+'''
+def upper_and_lower(string):
+    for i in range(0,len(string)):
+        upper=0
+        lower=0
+        if (string[i]==string[i].upper()):
+            upper=upper+1
+            print("the String upper letters are : ",string[i])
+        else:
+            lower=lower+1
+            print("lower letters in string are : ",string[i])
+            print("lower letter in string are : ",lower)
+            print("upper letters are : ",upper)
+strings="this Is an String"
+upper_and_lower(strings)
+'''
+'''def fact(num):
+    factorial=int(1);
+    i=int(1)
+    while(i<=num):
+        factorial=factorial*i
+        i=i+1
+    return factorial
+
+number=int(input("enter the number: "))
+factorial=fact(number)
+print("the factorial of {} is {}".format(number,factorial))
+'''
+def uandlower(string):
+    upper=int(0)
+    lower=int(0)
+    else_ch=int(0)
+    for i in range(0,len(string)):
+        if(string[i].isupper()==True):
+            upper=upper+1
+            print("the character {} is upper: ".format(string[i]))
+        elif(string[i].islower()==True):
+            lower=lower+1
+            print("the lower character is {} ".format(string[i]))
+        else:
+            else_ch+=1
+            print("the else character is {}".format(string[i]))
+    print("the total lower is {} and total upper is {} and else is {}".format(lower,upper,else_ch))
+string="This is an String"
+uandlower(string)
+
